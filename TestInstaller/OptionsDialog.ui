@@ -45,10 +45,10 @@ border: 1px solid #e7e7e7;
    <widget class="QToolButton" name="closeBtn">
     <property name="geometry">
      <rect>
-      <x>383</x>
-      <y>-15</y>
-      <width>75</width>
-      <height>75</height>
+      <x>407</x>
+      <y>5</y>
+      <width>28</width>
+      <height>28</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -63,8 +63,8 @@ background-color: rgba(255, 255, 255, 0);
      <string/>
     </property>
     <property name="icon">
-     <iconset>
-      <normaloff>Resources/close.png</normaloff>Resources/close.png</iconset>
+     <iconset resource="TestInstaller.qrc">
+      <normaloff>:/TestInstaller/Resources/close.png</normaloff>:/TestInstaller/Resources/close.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -85,7 +85,7 @@ background-color: rgba(255, 255, 255, 0);
      <bool>true</bool>
     </property>
     <property name="pixmap" stdset="0">
-     <pixmap/>
+     <pixmap>Resources/close.png</pixmap>
     </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget">
@@ -282,8 +282,8 @@ background-color: rgba(255, 255, 255, 0);
           <string>...</string>
          </property>
          <property name="icon">
-          <iconset>
-           <normaloff>Resources/search.png</normaloff>Resources/search.png</iconset>
+          <iconset resource="TestInstaller.qrc">
+           <normaloff>:/TestInstaller/Resources/search.png</normaloff>:/TestInstaller/Resources/search.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -366,7 +366,9 @@ font-family: &quot;Arial&quot;;
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="TestInstaller.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>closeBtn</sender>

@@ -1,4 +1,5 @@
 <RCC>
     <qresource prefix="TestApplication">
+	<file>Resources/close.png</file>
     </qresource>
 </RCC>

@@ -45,10 +45,10 @@ border: 1px solid #e7e7e7;
    <widget class="QToolButton" name="closeAppBtn">
     <property name="geometry">
      <rect>
-      <x>383</x>
-      <y>-15</y>
-      <width>75</width>
-      <height>75</height>
+      <x>407</x>
+      <y>5</y>
+      <width>28</width>
+      <height>28</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -63,8 +63,8 @@ background-color: rgba(255, 255, 255, 0);
      <string/>
     </property>
     <property name="icon">
-     <iconset>
-      <normaloff>Resources/close.png</normaloff>Resources/close.png</iconset>
+     <iconset resource="TestApplication.qrc">
+      <normaloff>:/TestApplication/Resources/close.png</normaloff>:/TestApplication/Resources/close.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -85,7 +85,7 @@ background-color: rgba(255, 255, 255, 0);
      <bool>true</bool>
     </property>
     <property name="pixmap" stdset="0">
-     <pixmap/>
+     <pixmap>Resources/close.png</pixmap>
     </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget">
