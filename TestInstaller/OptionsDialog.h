@@ -11,6 +11,11 @@ public:
 	OptionsDialog(QWidget *parent = Q_NULLPTR);
 	~OptionsDialog();
 
+	QString getPath() const
+	{
+		return ui.fileEdit->text();
+	}
+
 private slots:
 	void browseBtnClicked();
 

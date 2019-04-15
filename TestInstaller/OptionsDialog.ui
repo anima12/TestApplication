@@ -416,8 +416,25 @@ font-family: &quot;Arial&quot;;
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>installBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>OptionsDialog</receiver>
+   <slot>installBtnClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>browseBtnClicked()</slot>
+  <slot>installBtnClicked()</slot>
  </slots>
 </ui>
