@@ -38,7 +38,7 @@ public:
     QVBoxLayout *verticalLayout_3;
     QTextEdit *installedVersionText;
     QTextEdit *latestVersionText;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QTextEdit *newVersionText;
     QPushButton *updateBtn;
@@ -126,6 +126,7 @@ public:
 "text-align: right;\n"
 "border: white;\n"
 "}"));
+        updatesText->setReadOnly(true);
 
         gridLayout->addWidget(updatesText, 2, 1, 1, 1, Qt::AlignLeft|Qt::AlignTop);
 
@@ -144,6 +145,7 @@ public:
 "text-align: center;\n"
 "border: white;\n"
 "}"));
+        installedVersionText->setReadOnly(true);
 
         verticalLayout_3->addWidget(installedVersionText, 0, Qt::AlignTop);
 
@@ -164,21 +166,22 @@ public:
 "text-align: center;\n"
 "border: white;\n"
 "}"));
+        latestVersionText->setReadOnly(true);
 
         verticalLayout_3->addWidget(latestVersionText, 0, Qt::AlignTop);
 
 
         gridLayout->addLayout(verticalLayout_3, 2, 0, 1, 1);
 
-        widget = new QWidget(mainFrame);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(30, 230, 391, 73));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(mainFrame);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(30, 230, 391, 73));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        newVersionText = new QTextEdit(widget);
+        newVersionText = new QTextEdit(layoutWidget);
         newVersionText->setObjectName(QStringLiteral("newVersionText"));
         newVersionText->setMaximumSize(QSize(16777215, 30));
         newVersionText->setStyleSheet(QLatin1String("#newVersionText {\n"
@@ -187,10 +190,11 @@ public:
 "color: #c44512;\n"
 "border: white;\n"
 "}"));
+        newVersionText->setReadOnly(true);
 
         horizontalLayout->addWidget(newVersionText, 0, Qt::AlignLeft|Qt::AlignVCenter);
 
-        updateBtn = new QPushButton(widget);
+        updateBtn = new QPushButton(layoutWidget);
         updateBtn->setObjectName(QStringLiteral("updateBtn"));
         updateBtn->setStyleSheet(QLatin1String("#updateBtn {\n"
 "font-size: 18px;\n"
@@ -205,10 +209,8 @@ public:
 
         horizontalLayout->addWidget(updateBtn);
 
+        layoutWidget->raise();
         gridLayoutWidget->raise();
-        updateBtn->raise();
-        testProgramText->raise();
-        newVersionText->raise();
         closeAppBtn->raise();
 
         retranslateUi(TestApplicationClass);

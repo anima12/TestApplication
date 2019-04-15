@@ -141,6 +141,7 @@ public:
 "text-align: center;\n"
 "border: white;\n"
 "}"));
+        installText->setReadOnly(true);
 
         gridLayout->addWidget(installText, 3, 0, 1, 1);
 

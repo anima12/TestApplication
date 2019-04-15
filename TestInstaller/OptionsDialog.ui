@@ -64,7 +64,7 @@ background-color: rgba(255, 255, 255, 0);
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../QT/TestApplication/TestApplication/Resources/close.png</normaloff>../../QT/TestApplication/TestApplication/Resources/close.png</iconset>
+      <normaloff>Resources/close.png</normaloff>Resources/close.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -283,7 +283,7 @@ background-color: rgba(255, 255, 255, 0);
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../QT/TestApplication/TestApplication/Resources/search.png</normaloff>../../QT/TestApplication/TestApplication/Resources/search.png</iconset>
+           <normaloff>Resources/search.png</normaloff>Resources/search.png</iconset>
          </property>
          <property name="iconSize">
           <size>

@@ -1,3 +1,7 @@
-﻿  TestApplication.cpp
-  TestApplication.vcxproj -> E:\projects\TestApplication\x64\Debug\TestApplication.exe
-  TestApplication.vcxproj -> E:\projects\TestApplication\x64\Debug\TestApplication.pdb (Full PDB)
+﻿  Uic'ing TestApplication.ui...
+D:\Personal\proj\TestApplication\TestApplication\TestApplication.ui : warning : An invalid pixmap property 'pixmap' was encountered.
+  moc_TestApplication.cpp
+  TestApplication.cpp
+  main.cpp
+  TestApplication.vcxproj -> D:\Personal\proj\TestApplication\x64\Debug\TestApplication.exe
+  TestApplication.vcxproj -> D:\Personal\proj\TestApplication\x64\Debug\TestApplication.pdb (Full PDB)

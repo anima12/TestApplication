@@ -70,7 +70,7 @@ public:
 "background-color: rgba(255, 255, 255, 0);\n"
 "}"));
         QIcon icon;
-        icon.addFile(QStringLiteral("../../QT/TestApplication/TestApplication/Resources/close.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral("Resources/close.png"), QSize(), QIcon::Normal, QIcon::Off);
         closeBtn->setIcon(icon);
         closeBtn->setIconSize(QSize(75, 75));
         closeBtn->setCheckable(false);
@@ -174,7 +174,7 @@ public:
 "background-color: rgba(255, 255, 255, 0);\n"
 "}"));
         QIcon icon1;
-        icon1.addFile(QStringLiteral("../../QT/TestApplication/TestApplication/Resources/search.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QStringLiteral("Resources/search.png"), QSize(), QIcon::Normal, QIcon::Off);
         browseBtn->setIcon(icon1);
         browseBtn->setIconSize(QSize(32, 28));
         browseBtn->setAutoRaise(true);
