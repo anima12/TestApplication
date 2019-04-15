@@ -1,4 +1,6 @@
 <RCC>
-    <qresource prefix="TestInstaller">
+    <qresource prefix="/TestInstaller">
+        <file>Resources/close.png</file>
+        <file>Resources/search.png</file>
     </qresource>
 </RCC>
