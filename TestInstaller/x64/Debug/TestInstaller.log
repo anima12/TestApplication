@@ -1,7 +1,0 @@
-﻿  Uic'ing TestInstaller.ui...
-D:\Personal\proj\TestApplication\TestInstaller\TestInstaller.ui : warning : An invalid pixmap property 'pixmap' was encountered.
-  moc_TestInstaller.cpp
-  TestInstaller.cpp
-  main.cpp
-  TestInstaller.vcxproj -> D:\Personal\proj\TestApplication\x64\Debug\TestInstaller.exe
-  TestInstaller.vcxproj -> D:\Personal\proj\TestApplication\x64\Debug\TestInstaller.pdb (Full PDB)

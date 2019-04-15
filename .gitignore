@@ -1,0 +1,6 @@
+TestApplication/GeneratedFiles/*
+TestApplication/x64/Debug/
+TestInstaller/GeneratedFiles/
+TestInstaller/x64/Debug
+x64/Debug/
+TestApplication.VC.db
