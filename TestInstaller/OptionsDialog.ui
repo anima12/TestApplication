@@ -252,7 +252,7 @@ font-family: &quot;Arial&quot;;
 }</string>
          </property>
          <property name="text">
-          <string>C:\Program Files (x86)\Test\</string>
+          <string/>
          </property>
         </widget>
        </item>

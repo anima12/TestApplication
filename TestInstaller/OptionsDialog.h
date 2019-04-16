@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QDialog>
+#include <QDir>
+
 #include "ui_OptionsDialog.h"
 
 class OptionsDialog : public QDialog
@@ -16,8 +18,12 @@ public:
 		return ui.fileEdit->text();
 	}
 
+signals:
+	void startInstall();
+
 private slots:
 	void browseBtnClicked();
+	void installBtnClicked();
 
 private:
 	Ui::OptionsDialog ui;
